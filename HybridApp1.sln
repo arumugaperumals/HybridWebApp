@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridApp1", "HybridApp1\Hy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridApp1.UWP", "HybridApp1.UWP\HybridApp1.UWP.csproj", "{97C1A1B4-568E-4111-969F-7EB727A514A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridApp1.iOS", "HybridApp1.iOS\HybridApp1.iOS.csproj", "{AECBDE6D-7D3C-484F-AC99-6D9689C17169}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
