@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HybridApp1"
+             x:Class="HybridApp1.MainPage">
+    <Grid>
+      
+        <Grid BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+             </Grid.RowDefinitions>
+            <Label Text="Its a native Button. Clicking this will set Label property of Hybrid control to MyButton"/>
+        <Button Text="Change Label" HorizontalOptions="Start" VerticalOptions="Start" Grid.Row="1" Clicked="Button_Clicked"/>
+        </Grid>
+        <Grid BackgroundColor="White" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Label Text="Its a native Text field. Its Text property is bind to Hybrid control's label property" />
+            <Entry Grid.Row="1" x:Name="entry" Text="Button1" WidthRequest="200" HeightRequest="40"/>
+        </Grid>
+        <Grid x:Name="rootGrid" BackgroundColor="LightGray" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Label Text="Its a hybrid webview control. C# Event will be raised on clicking/tapping this." />
+            </Grid>
+        </Grid>
+</ContentPage>
